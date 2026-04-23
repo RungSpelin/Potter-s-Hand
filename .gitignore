@@ -1,18 +1,69 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Business Name</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: #020617;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+      background: linear-gradient(to right, #020617, #1e293b);
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 500px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #22c55e;
+      color: black;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+<header>
+  <h2>Your Business</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+<section class="hero">
+  <h1>Premium Quality. Trusted by Families.</h1>
+  <p>We provide high-quality products crafted with passion and excellence.</p>
+  <button class="btn">Explore Products</button>
+</section>
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+</body>
+</html>
